@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #000000;
+    line-height: 1.6;
+}
+/* #d{
+    background-image: url(3.jpg);
+    background-size: 1700px;
+     background-position:auto; 
+} */
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(147, 226, 237, 0.8);
+    color: #023e8a;
+}
+#img{
+    text-align: left;
+}
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+.header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    font-family: cursive;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    background-image:url(3.jpg) ;
+    background-size: cover;
+}
+.input-section{
+    text-align: center;
+}
+#add-button:hover{
+    background-color: aqua;
+    transform: scale(1.1);
+}
+#add-button{
+    border-radius:10px ;
+    background-image:url(3.jpg);
+    color: white;
+}
+
+#bucket-item{
+    background-color: transparent;
+    border-radius: 10px;
+}
+#bucket-item::placeholder{  
+    background-image: url(3.jpg);
+    color:white;
+}
+.bucket-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+}
+.bucket-list li {
+    background-color: #719ea676;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #03045e;
+    font-weight: bold;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+.bucket-list li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    
+}
+
+.bucket-list li i {
+    margin-right: 10px;
+    color: #03045e;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(147, 226, 237, 0.8);
+    color: #023e8a;
+    transform: translate(2px);
+    font-family: cursive;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1em;
+}
+/* #d{
+    background-image:url(3.jpg);
+    background-position:center  ;
+} */
+/* Responsive Design */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header p {
+        font-size: 1em;
+    }
+
+    .bucket-list li {
+        font-size: 0.9em;
+    }
+}
+
